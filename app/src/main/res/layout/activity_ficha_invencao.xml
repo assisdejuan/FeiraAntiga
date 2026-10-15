@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutRaizFicha"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_pergaminho"
+    android:orientation="vertical"
+    tools:context=".FichaInvencaoActivity">
+
+    <ImageView
+        android:id="@+id/imgToldoFicha"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/altura_toldo"
+        android:contentDescription="@string/cd_toldo"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_toldo" />
+
+    <TextView
+        android:id="@+id/tvTituloFicha"
+        style="@style/OficinaImpossivel.TituloCartaz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margem_pequena"
+        android:gravity="center"
+        android:text="@string/titulo_ficha"
+        android:textSize="24sp" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollFicha"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- O "cartaz" da invenção (animação XML de entrada em res/anim) -->
+        <LinearLayout
+            android:id="@+id/cardFichaInvencao"
+            style="@style/OficinaImpossivel.Cartao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margem_tela"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingStart="20dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="24dp"
+            android:paddingBottom="24dp">
+
+            <TextView
+                android:id="@+id/tvRotuloFichaNumero"
+                style="@style/OficinaImpossivel.Rotulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rotulo_ficha_numero"
+                android:textColor="@color/vinho" />
+
+            <ImageView
+                android:id="@+id/imgInvencaoFicha"
+                android:layout_width="@dimen/imagem_ficha"
+                android:layout_height="@dimen/imagem_ficha"
+                android:layout_marginTop="@dimen/margem_media"
+                android:background="@drawable/bg_moldura_imagem"
+                android:contentDescription="@string/cd_imagem_invencao_generica"
+                android:padding="26dp"
+                android:scaleType="fitCenter"
+                tools:src="@drawable/img_caldeirao" />
+
+            <TextView
+                android:id="@+id/tvNomeInvencaoFicha"
+                style="@style/OficinaImpossivel.TituloCartaz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margem_tela"
+                android:gravity="center_horizontal"
+                android:textSize="26sp"
+                tools:text="Caldeirão Autoborbulhante" />
+
+            <TextView
+                android:id="@+id/tvCategoriaInvencaoFicha"
+                style="@style/OficinaImpossivel.ChipCategoria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margem_pequena"
+                android:rotation="-3"
+                android:textSize="13sp"
+                tools:text="Poções Borbulhantes" />
+
+            <View
+                android:id="@+id/divisorFicha"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/linha_tracejada"
+                android:layerType="software" />
+
+            <TextView
+                android:id="@+id/tvRotuloInventorFicha"
+                style="@style/OficinaImpossivel.Rotulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margem_tela"
+                android:text="@string/rotulo_inventor" />
+
+            <TextView
+                android:id="@+id/tvInventorFicha"
+                style="@style/OficinaImpossivel.TituloCartaz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textSize="18sp"
+                tools:text="Bruxa Morgana Fuligem" />
+
+            <TextView
+                android:id="@+id/tvRotuloDescricaoFicha"
+                style="@style/OficinaImpossivel.Rotulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margem_tela"
+                android:text="@string/rotulo_descricao" />
+
+            <TextView
+                android:id="@+id/tvDescricaoFicha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.25"
+                android:textColor="@color/tinta"
+                android:textSize="16sp"
+                tools:text="Caldeirão que mexe a própria poção em espiral perfeita." />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/layoutBotoesFicha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pergaminho_escuro"
+        android:orientation="horizontal"
+        android:padding="@dimen/margem_tela">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnVoltarFeira"
+            style="@style/OficinaImpossivel.Botao.Secundario"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margem_pequena"
+            android:layout_weight="1"
+            android:text="@string/botao_voltar_feira"
+            app:icon="@drawable/ic_voltar" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnTestarPrototipo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/botao_testar_prototipo"
+            app:icon="@drawable/ic_frasco" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Variação em destaque (laranja claro): sombra sólida de tinta deslocada + papel com borda grossa. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:left="@dimen/sombra_cartao"
+        android:top="@dimen/sombra_cartao">
+        <shape>
+            <solid android:color="@color/tinta" />
+            <corners android:radius="@dimen/raio_cartao" />
+        </shape>
+    </item>
+    <item
+        android:bottom="@dimen/sombra_cartao"
+        android:right="@dimen/sombra_cartao">
+        <shape>
+            <solid android:color="@color/abobora_clara" />
+            <stroke
+                android:width="@dimen/borda_tinta"
+                android:color="@color/tinta" />
+            <corners android:radius="@dimen/raio_cartao" />
+        </shape>
+    </item>
+</layer-list>

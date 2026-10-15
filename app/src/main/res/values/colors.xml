@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Paleta "Cartaz de feira antiga" -->
+    <color name="pergaminho">#F4E9D2</color>
+    <color name="pergaminho_escuro">#E6D3AE</color>
+    <color name="papel">#FFF8EA</color>
+    <color name="tinta">#2A1B12</color>
+    <color name="tinta_suave">#6B5440</color>
+    <color name="abobora">#E0601A</color>
+    <color name="abobora_clara">#F7B267</color>
+    <color name="vinho">#8C1C2B</color>
+    <color name="musgo">#4E6B2E</color>
+    <color name="noite_medalhao">#231733</color>
+    <color name="vinho_translucido">#1F8C1C2B</color>
+    <color name="abobora_translucida">#29E0601A</color>
+    <color name="scrim_navegacao">#CCF4E9D2</color>
+
+    <!-- Cores dos selos de resultado -->
+    <color name="selo_aprovada">#4E6B2E</color>
+    <color name="selo_ajustes">#D98E1F</color>
+    <color name="selo_reprovada">#8C1C2B</color>
+</resources>

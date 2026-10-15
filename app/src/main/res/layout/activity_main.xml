@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- O cabeçalho (toldo, letreiro e formulário) recolhe ao rolar a vitrine;
+     a barra "Vitrine da feira" permanece fixa. -->
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutRaizFeira"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_pergaminho"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarFeira"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:elevation="0dp"
+        app:liftOnScroll="false">
+
+        <LinearLayout
+            android:id="@+id/layoutCabecalhoFeira"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_scrollFlags="scroll|enterAlways|snap">
+
+            <ImageView
+                android:id="@+id/imgToldo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/altura_toldo"
+                android:contentDescription="@string/cd_toldo"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_toldo" />
+
+            <!-- Letreiro -->
+            <TextView
+                android:id="@+id/tvTituloFeira"
+                style="@style/OficinaImpossivel.TituloCartaz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margem_media"
+                android:gravity="center"
+                android:text="@string/titulo_feira"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/tvSubtituloFeira"
+                style="@style/OficinaImpossivel.Rotulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/subtitulo_feira"
+                android:textColor="@color/vinho" />
+
+            <TextView
+                android:id="@+id/tvQuantidadePrototipos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margem_pequena"
+                android:background="@drawable/bg_carimbo"
+                android:fontFamily="monospace"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="4dp"
+                android:textColor="@color/vinho"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                tools:text="6 protótipos assombrando a feira" />
+
+            <TextView
+                android:id="@+id/tvUltimoTeste"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margem_tela"
+                android:layout_marginTop="@dimen/margem_media"
+                android:background="@drawable/bg_ultimo_teste"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/margem_media"
+                android:paddingVertical="10dp"
+                android:textColor="@color/tinta"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                tools:text="Último teste: Caldeirão Autoborbulhante – Aprovada"
+                tools:visibility="visible" />
+
+            <!-- Formulário de inscrição -->
+            <LinearLayout
+                android:id="@+id/cardFormularioCadastro"
+                style="@style/OficinaImpossivel.Cartao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margem_tela"
+                android:layout_marginTop="@dimen/margem_media"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTituloFormulario"
+                    style="@style/OficinaImpossivel.TituloCartaz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/titulo_formulario"
+                    android:textSize="17sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilNomeInvencao"
+                    style="@style/OficinaImpossivel.CampoTexto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margem_media"
+                    android:hint="@string/hint_nome_invencao">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etNomeInvencao"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapWords"
+                        android:maxLength="40"
+                        android:maxLines="1" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilNomeInventor"
+                    style="@style/OficinaImpossivel.CampoTexto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margem_pequena"
+                    android:hint="@string/hint_nome_inventor">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etNomeInventor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPersonName|textCapWords"
+                        android:maxLength="40"
+                        android:maxLines="1" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/tvRotuloCategoria"
+                    style="@style/OficinaImpossivel.Rotulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margem_media"
+                    android:labelFor="@id/spCategoria"
+                    android:text="@string/rotulo_categoria" />
+
+                <Spinner
+                    android:id="@+id/spCategoria"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/bg_spinner"
+                    android:popupBackground="@color/papel"
+                    android:spinnerMode="dropdown" />
+
+                <TextView
+                    android:id="@+id/tvErroCategoria"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/erro_categoria"
+                    android:textAppearance="?attr/textAppearanceBodySmall"
+                    android:textColor="?attr/colorError"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnCadastrar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margem_media"
+                    android:text="@string/botao_cadastrar"
+                    app:icon="@drawable/ic_abobora_mais"
+                    app:iconGravity="textStart" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Barra fixa da vitrine -->
+        <LinearLayout
+            android:id="@+id/layoutBarraVitrine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/pergaminho"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/margem_tela"
+            android:paddingTop="@dimen/margem_media"
+            android:paddingBottom="@dimen/margem_pequena">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTituloVitrine"
+                    style="@style/OficinaImpossivel.TituloCartaz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/titulo_vitrine"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tvDicaVitrine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dica_vitrine"
+                    android:textColor="@color/tinta_suave"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAlternarLayout"
+                style="@style/OficinaImpossivel.Botao.Secundario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/cd_alternar_para_grade"
+                android:text="@string/botao_ver_grade"
+                app:icon="@drawable/ic_grade" />
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvInvencoes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingHorizontal="10dp"
+        android:paddingBottom="@dimen/margem_tela"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:itemCount="4"
+        tools:listitem="@layout/item_invencao_lista" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutRaizCamara"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_pergaminho"
+    android:orientation="vertical"
+    tools:context=".CamaraTestesActivity">
+
+    <ImageView
+        android:id="@+id/imgToldoCamara"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/altura_toldo"
+        android:contentDescription="@string/cd_toldo"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_toldo" />
+
+    <TextView
+        android:id="@+id/tvTituloCamara"
+        style="@style/OficinaImpossivel.TituloCartaz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margem_pequena"
+        android:gravity="center"
+        android:text="@string/titulo_camara"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tvSubtituloCamara"
+        style="@style/OficinaImpossivel.Rotulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingHorizontal="@dimen/margem_tela"
+        android:text="@string/subtitulo_camara"
+        android:textAllCaps="false"
+        android:textColor="@color/vinho" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollCamara"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margem_pequena"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/margem_tela"
+            android:paddingBottom="@dimen/margem_tela">
+
+            <!-- Invenção recebida, em destaque laranja -->
+            <LinearLayout
+                android:id="@+id/cardInvencaoEmTeste"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_cartao_destaque"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/margem_media"
+                android:paddingTop="@dimen/margem_media"
+                android:paddingEnd="16dp"
+                android:paddingBottom="16dp">
+
+                <ImageView
+                    android:id="@+id/imgInvencaoTeste"
+                    android:layout_width="@dimen/imagem_camara"
+                    android:layout_height="@dimen/imagem_camara"
+                    android:background="@drawable/bg_moldura_imagem"
+                    android:contentDescription="@string/cd_imagem_invencao_generica"
+                    android:padding="13dp"
+                    android:scaleType="fitCenter"
+                    tools:src="@drawable/img_fantasma" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvRotuloEmTeste"
+                        style="@style/OficinaImpossivel.Rotulo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rotulo_invencao_em_teste"
+                        android:textColor="@color/tinta" />
+
+                    <TextView
+                        android:id="@+id/tvNomeInvencaoTeste"
+                        style="@style/OficinaImpossivel.TituloCartaz"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        tools:text="Detector de Fantasmas Portátil" />
+
+                    <TextView
+                        android:id="@+id/tvCategoriaInvencaoTeste"
+                        style="@style/OficinaImpossivel.ChipCategoria"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        tools:text="Artefatos Fantasmagóricos" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Formulário do teste -->
+            <LinearLayout
+                android:id="@+id/cardFormularioTeste"
+                style="@style/OficinaImpossivel.Cartao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margem_media"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvRotuloResultado"
+                    style="@style/OficinaImpossivel.TituloCartaz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rotulo_resultado"
+                    android:textSize="17sp" />
+
+                <RadioGroup
+                    android:id="@+id/rgResultadoTeste"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp">
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/rbAprovada"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="monospace"
+                        android:text="@string/resultado_aprovada"
+                        android:textColor="@color/tinta"
+                        app:buttonTint="@color/selo_aprovada" />
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/rbPrecisaAjustes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="monospace"
+                        android:text="@string/resultado_ajustes"
+                        android:textColor="@color/tinta"
+                        app:buttonTint="@color/selo_ajustes" />
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/rbReprovada"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="monospace"
+                        android:text="@string/resultado_reprovada"
+                        android:textColor="@color/tinta"
+                        app:buttonTint="@color/selo_reprovada" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/tvErroResultado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/erro_resultado"
+                    android:textAppearance="?attr/textAppearanceBodySmall"
+                    android:textColor="?attr/colorError"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilObservacao"
+                    style="@style/OficinaImpossivel.CampoTexto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margem_media"
+                    android:hint="@string/hint_observacao"
+                    app:helperText="@string/ajuda_observacao">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etObservacao"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|start"
+                        android:inputType="textMultiLine|textCapSentences"
+                        android:maxLength="200"
+                        android:minLines="2" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnConfirmarTeste"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margem_media"
+                    android:text="@string/botao_confirmar_teste" />
+            </LinearLayout>
+
+            <!-- Selo de resultado: começa invisível (já medido) e surge com ViewPropertyAnimator -->
+            <LinearLayout
+                android:id="@+id/layoutSeloResultado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="invisible"
+                tools:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/imgSeloResultado"
+                    android:layout_width="@dimen/selo_resultado"
+                    android:layout_height="@dimen/selo_resultado"
+                    android:contentDescription="@string/cd_selo_resultado"
+                    android:scaleType="fitCenter"
+                    tools:src="@drawable/ic_selo_aprovada" />
+
+                <TextView
+                    android:id="@+id/tvSeloResultado"
+                    style="@style/OficinaImpossivel.TituloCartaz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margem_pequena"
+                    android:textSize="22sp"
+                    tools:text="Selo: Aprovada" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/layoutBotoesCamara"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pergaminho_escuro"
+        android:orientation="horizontal"
+        android:padding="@dimen/margem_tela">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnReverFicha"
+            style="@style/OficinaImpossivel.Botao.Secundario"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margem_pequena"
+            android:layout_weight="1"
+            android:text="@string/botao_rever_ficha"
+            app:icon="@drawable/ic_voltar" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEncerrarAvaliacao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/botao_encerrar_avaliacao"
+            app:icon="@drawable/ic_sair" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margem_tela">16dp</dimen>
+    <dimen name="margem_media">12dp</dimen>
+    <dimen name="margem_pequena">8dp</dimen>
+    <dimen name="sombra_cartao">4dp</dimen>
+    <dimen name="borda_tinta">2dp</dimen>
+    <dimen name="raio_cartao">14dp</dimen>
+    <dimen name="altura_toldo">34dp</dimen>
+    <dimen name="imagem_item_lista">60dp</dimen>
+    <dimen name="imagem_item_grade">84dp</dimen>
+    <dimen name="imagem_ficha">156dp</dimen>
+    <dimen name="imagem_camara">68dp</dimen>
+    <dimen name="selo_resultado">140dp</dimen>
+</resources>

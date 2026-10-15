@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.OficinaImpossivel" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/abobora</item>
+        <item name="colorOnPrimary">@color/tinta</item>
+        <item name="colorPrimaryContainer">@color/abobora_clara</item>
+        <item name="colorOnPrimaryContainer">@color/tinta</item>
+        <item name="colorSecondary">@color/musgo</item>
+        <item name="colorOnSecondary">@color/papel</item>
+        <item name="colorTertiary">@color/vinho</item>
+        <item name="colorOnTertiary">@color/papel</item>
+        <item name="colorError">@color/vinho</item>
+        <item name="android:colorBackground">@color/pergaminho</item>
+        <item name="colorOnBackground">@color/tinta</item>
+        <item name="colorSurface">@color/papel</item>
+        <item name="colorOnSurface">@color/tinta</item>
+        <item name="colorOnSurfaceVariant">@color/tinta_suave</item>
+        <item name="colorSurfaceContainer">@color/papel</item>
+        <item name="colorSurfaceContainerHigh">@color/papel</item>
+        <item name="colorSurfaceContainerHighest">@color/pergaminho_escuro</item>
+        <item name="colorOutline">@color/tinta</item>
+        <item name="colorControlNormal">@color/tinta</item>
+        <item name="android:windowBackground">@color/pergaminho</item>
+        <item name="materialButtonStyle">@style/OficinaImpossivel.Botao</item>
+        <item name="materialAlertDialogTheme">@style/OficinaImpossivel.Dialogo</item>
+    </style>
+
+    <style name="OficinaImpossivel.Dialogo" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="colorSurfaceContainerHigh">@color/papel</item>
+        <item name="colorPrimary">@color/vinho</item>
+        <item name="shapeAppearanceOverlay">@style/OficinaImpossivel.FormaCartao</item>
+    </style>
+
+    <style name="OficinaImpossivel.FormaCartao" parent="">
+        <item name="cornerSize">@dimen/raio_cartao</item>
+    </style>
+
+    <!-- Títulos em serifa, como num cartaz antigo -->
+    <style name="OficinaImpossivel.TituloCartaz" parent="">
+        <item name="android:fontFamily">serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/tinta</item>
+    </style>
+
+    <!-- Rótulos em fonte de máquina de escrever -->
+    <style name="OficinaImpossivel.Rotulo" parent="">
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textColor">@color/tinta_suave</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:letterSpacing">0.06</item>
+    </style>
+
+    <!-- Categoria como carimbo tracejado -->
+    <style name="OficinaImpossivel.ChipCategoria" parent="">
+        <item name="android:background">@drawable/bg_carimbo</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:textColor">@color/vinho</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!-- Cartão com borda de tinta e sombra sólida deslocada -->
+    <style name="OficinaImpossivel.Cartao" parent="">
+        <item name="android:background">@drawable/bg_cartao</item>
+        <item name="android:paddingStart">@dimen/margem_tela</item>
+        <item name="android:paddingTop">@dimen/margem_tela</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:paddingBottom">20dp</item>
+    </style>
+
+    <style name="OficinaImpossivel.Botao" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/abobora</item>
+        <item name="android:textColor">@color/tinta</item>
+        <item name="iconTint">@color/tinta</item>
+        <item name="strokeColor">@color/tinta</item>
+        <item name="strokeWidth">@dimen/borda_tinta</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:minHeight">52dp</item>
+    </style>
+
+    <style name="OficinaImpossivel.Botao.Secundario">
+        <item name="backgroundTint">@color/papel</item>
+    </style>
+
+    <style name="OficinaImpossivel.CampoTexto" parent="Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/tinta</item>
+        <item name="boxStrokeWidth">@dimen/borda_tinta</item>
+        <item name="boxStrokeWidthFocused">@dimen/borda_tinta</item>
+        <item name="boxBackgroundColor">@color/papel</item>
+        <item name="hintTextColor">@color/abobora</item>
+        <item name="boxCornerRadiusTopStart">10dp</item>
+        <item name="boxCornerRadiusTopEnd">10dp</item>
+        <item name="boxCornerRadiusBottomStart">10dp</item>
+        <item name="boxCornerRadiusBottomEnd">10dp</item>
+    </style>
+</resources>

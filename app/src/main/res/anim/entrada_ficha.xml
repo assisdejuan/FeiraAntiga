@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Entrada da ficha: o "cartaz" desce, gira até ficar reto e surge (translate + rotate + fade). -->
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="650"
+    android:interpolator="@android:anim/overshoot_interpolator"
+    android:shareInterpolator="true">
+
+    <alpha
+        android:fromAlpha="0.0"
+        android:toAlpha="1.0" />
+
+    <translate
+        android:fromYDelta="-8%"
+        android:toYDelta="0%" />
+
+    <rotate
+        android:fromDegrees="-6"
+        android:pivotX="50%"
+        android:pivotY="0%"
+        android:toDegrees="0" />
+</set>
