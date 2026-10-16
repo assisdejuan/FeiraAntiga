@@ -2,12 +2,12 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item>
         <shape android:shape="oval">
-            <solid android:color="@color/pergaminho" />
+            <solid android:color="@color/lousa" />
         </shape>
     </item>
     <item
         android:bottom="8dp"
-        android:drawable="@drawable/img_abobora"
+        android:drawable="@drawable/img_atomo"
         android:left="8dp"
         android:right="8dp"
         android:top="6dp" />

@@ -36,7 +36,7 @@
         android:paddingHorizontal="@dimen/margem_tela"
         android:text="@string/subtitulo_camara"
         android:textAllCaps="false"
-        android:textColor="@color/vinho" />
+        android:textColor="@color/azul_carimbo" />
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/scrollCamara"
@@ -73,7 +73,7 @@
                     android:contentDescription="@string/cd_imagem_invencao_generica"
                     android:padding="13dp"
                     android:scaleType="fitCenter"
-                    tools:src="@drawable/img_fantasma" />
+                    tools:src="@drawable/img_telescopio" />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -96,7 +96,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textSize="18sp"
-                        tools:text="Detector de Fantasmas Portátil" />
+                        tools:text="Telescópio de Papelão" />
 
                     <TextView
                         android:id="@+id/tvCategoriaInvencaoTeste"
@@ -104,7 +104,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="6dp"
-                        tools:text="Artefatos Fantasmagóricos" />
+                        tools:text="Astronomia" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -229,6 +229,8 @@
 
     <LinearLayout
         android:id="@+id/layoutBotoesCamara"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/pergaminho_escuro"

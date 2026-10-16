@@ -51,7 +51,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="@string/subtitulo_feira"
-                android:textColor="@color/vinho" />
+                android:textColor="@color/azul_carimbo" />
 
             <TextView
                 android:id="@+id/tvQuantidadePrototipos"
@@ -63,10 +63,10 @@
                 android:fontFamily="monospace"
                 android:paddingHorizontal="10dp"
                 android:paddingVertical="4dp"
-                android:textColor="@color/vinho"
+                android:textColor="@color/azul_carimbo"
                 android:textSize="13sp"
                 android:textStyle="bold"
-                tools:text="6 protótipos assombrando a feira" />
+                tools:text="6 projetos em exposição" />
 
             <TextView
                 android:id="@+id/tvUltimoTeste"
@@ -83,7 +83,7 @@
                 android:textSize="14sp"
                 android:textStyle="bold"
                 android:visibility="gone"
-                tools:text="Último teste: Caldeirão Autoborbulhante – Aprovada"
+                tools:text="Último teste: Vulcão de Bicarbonato Turbo – Aprovada"
                 tools:visibility="visible" />
 
             <!-- Formulário de inscrição -->
@@ -176,7 +176,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/margem_media"
                     android:text="@string/botao_cadastrar"
-                    app:icon="@drawable/ic_abobora_mais"
+                    app:icon="@drawable/ic_adicionar"
                     app:iconGravity="textStart" />
             </LinearLayout>
         </LinearLayout>

@@ -1,0 +1,46 @@
+<!-- Foguete de garrafa PET movido a água e ar comprimido -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <path
+        android:fillColor="#FFD23F"
+        android:pathData="M22,19 L23.4,22.6 L27,24 L23.4,25.4 L22,29 L20.6,25.4 L17,24 L20.6,22.6 Z" />
+    <path
+        android:fillColor="#FFD23F"
+        android:pathData="M78,36 L79.12,38.88 L82,40 L79.12,41.12 L78,44 L76.88,41.12 L74,40 L76.88,38.88 Z" />
+    <path
+        android:fillColor="#F3F1E6"
+        android:pathData="M72,18 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0 Z" />
+    <path
+        android:fillColor="#9AD3EE"
+        android:pathData="M45,72 L55,72 L60,92 L40,92 Z" />
+    <path
+        android:fillColor="#9AD3EE"
+        android:pathData="M32.5,88 a2.5,2.5 0 1,0 5.0,0 a2.5,2.5 0 1,0 -5.0,0 Z" />
+    <path
+        android:fillColor="#9AD3EE"
+        android:pathData="M62.5,86 a2.5,2.5 0 1,0 5.0,0 a2.5,2.5 0 1,0 -5.0,0 Z" />
+    <path
+        android:fillColor="#CFE8F0"
+        android:pathData="M42,22 L58,22 L58,72 L42,72 Z" />
+    <path
+        android:fillColor="#3DA5D9"
+        android:pathData="M42,52 L58,52 L58,72 L42,72 Z" />
+    <path
+        android:fillColor="#E0601A"
+        android:pathData="M42,23 Q50,4 58,23 Z" />
+    <path
+        android:fillColor="#E0601A"
+        android:pathData="M42,56 L31,76 L42,72 Z" />
+    <path
+        android:fillColor="#E0601A"
+        android:pathData="M58,56 L69,76 L58,72 Z" />
+    <path
+        android:pathData="M46,28 L46,48"
+        android:strokeColor="#FFF8EA"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

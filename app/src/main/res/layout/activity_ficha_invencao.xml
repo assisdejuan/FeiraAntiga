@@ -53,7 +53,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/rotulo_ficha_numero"
-                android:textColor="@color/vinho" />
+                android:textColor="@color/azul_carimbo" />
 
             <ImageView
                 android:id="@+id/imgInvencaoFicha"
@@ -64,7 +64,7 @@
                 android:contentDescription="@string/cd_imagem_invencao_generica"
                 android:padding="26dp"
                 android:scaleType="fitCenter"
-                tools:src="@drawable/img_caldeirao" />
+                tools:src="@drawable/img_vulcao" />
 
             <TextView
                 android:id="@+id/tvNomeInvencaoFicha"
@@ -74,7 +74,7 @@
                 android:layout_marginTop="@dimen/margem_tela"
                 android:gravity="center_horizontal"
                 android:textSize="26sp"
-                tools:text="Caldeirão Autoborbulhante" />
+                tools:text="Vulcão de Bicarbonato Turbo" />
 
             <TextView
                 android:id="@+id/tvCategoriaInvencaoFicha"
@@ -84,7 +84,7 @@
                 android:layout_marginTop="@dimen/margem_pequena"
                 android:rotation="-3"
                 android:textSize="13sp"
-                tools:text="Poções Borbulhantes" />
+                tools:text="Química" />
 
             <View
                 android:id="@+id/divisorFicha"
@@ -109,7 +109,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
                 android:textSize="18sp"
-                tools:text="Bruxa Morgana Fuligem" />
+                tools:text="Ana Lavoisier" />
 
             <TextView
                 android:id="@+id/tvRotuloDescricaoFicha"
@@ -128,12 +128,14 @@
                 android:lineSpacingMultiplier="1.25"
                 android:textColor="@color/tinta"
                 android:textSize="16sp"
-                tools:text="Caldeirão que mexe a própria poção em espiral perfeita." />
+                tools:text="Maquete de vulcão que mostra a reação entre bicarbonato e vinagre." />
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 
     <LinearLayout
         android:id="@+id/layoutBotoesFicha"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/pergaminho_escuro"

@@ -2,9 +2,9 @@
 <resources>
 
     <style name="Theme.OficinaImpossivel" parent="Theme.Material3.Light.NoActionBar">
-        <item name="colorPrimary">@color/abobora</item>
+        <item name="colorPrimary">@color/laranja</item>
         <item name="colorOnPrimary">@color/tinta</item>
-        <item name="colorPrimaryContainer">@color/abobora_clara</item>
+        <item name="colorPrimaryContainer">@color/laranja_clara</item>
         <item name="colorOnPrimaryContainer">@color/tinta</item>
         <item name="colorSecondary">@color/musgo</item>
         <item name="colorOnSecondary">@color/papel</item>
@@ -52,7 +52,7 @@
         <item name="android:letterSpacing">0.06</item>
     </style>
 
-    <!-- Categoria como carimbo tracejado -->
+    <!-- Categoria como carimbo tracejado (tinta azul) -->
     <style name="OficinaImpossivel.ChipCategoria" parent="">
         <item name="android:background">@drawable/bg_carimbo</item>
         <item name="android:fontFamily">monospace</item>
@@ -60,7 +60,7 @@
         <item name="android:paddingEnd">8dp</item>
         <item name="android:paddingTop">3dp</item>
         <item name="android:paddingBottom">3dp</item>
-        <item name="android:textColor">@color/vinho</item>
+        <item name="android:textColor">@color/azul_carimbo</item>
         <item name="android:textSize">11sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textAllCaps">true</item>
@@ -78,7 +78,7 @@
     </style>
 
     <style name="OficinaImpossivel.Botao" parent="Widget.Material3.Button">
-        <item name="backgroundTint">@color/abobora</item>
+        <item name="backgroundTint">@color/laranja</item>
         <item name="android:textColor">@color/tinta</item>
         <item name="iconTint">@color/tinta</item>
         <item name="strokeColor">@color/tinta</item>
@@ -87,7 +87,12 @@
         <item name="android:fontFamily">monospace</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textAllCaps">true</item>
-        <item name="android:letterSpacing">0.02</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:textSize">13sp</item>
+        <item name="iconPadding">6dp</item>
+        <item name="iconGravity">textStart</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingEnd">12dp</item>
         <item name="android:minHeight">52dp</item>
     </style>
 
@@ -96,11 +101,11 @@
     </style>
 
     <style name="OficinaImpossivel.CampoTexto" parent="Widget.Material3.TextInputLayout.OutlinedBox.Dense">
-        <item name="boxStrokeColor">@color/tinta</item>
+        <item name="boxStrokeColor">@color/contorno_campo</item>
         <item name="boxStrokeWidth">@dimen/borda_tinta</item>
         <item name="boxStrokeWidthFocused">@dimen/borda_tinta</item>
         <item name="boxBackgroundColor">@color/papel</item>
-        <item name="hintTextColor">@color/abobora</item>
+        <item name="hintTextColor">@color/laranja</item>
         <item name="boxCornerRadiusTopStart">10dp</item>
         <item name="boxCornerRadiusTopEnd">10dp</item>
         <item name="boxCornerRadiusBottomStart">10dp</item>

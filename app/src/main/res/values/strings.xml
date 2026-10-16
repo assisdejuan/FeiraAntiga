@@ -3,19 +3,19 @@
     <string name="app_name">Feira Antiga</string>
 
     <!-- Tela 1 – Feira de Invenções -->
-    <string name="titulo_feira">Feira de Invenções</string>
-    <string name="subtitulo_feira">Edição Noite das Bruxas · Entrada franca</string>
+    <string name="titulo_feira">Feira de Ciências</string>
+    <string name="subtitulo_feira">Mostra de projetos · Entrada franca</string>
     <plurals name="quantidade_prototipos">
-        <item quantity="one">%d protótipo assombrando a feira</item>
-        <item quantity="other">%d protótipos assombrando a feira</item>
+        <item quantity="one">%d projeto em exposição</item>
+        <item quantity="other">%d projetos em exposição</item>
     </plurals>
     <string name="ultimo_teste">Último teste: %1$s – %2$s</string>
-    <string name="titulo_formulario">Inscreva sua criatura… digo, criação</string>
+    <string name="titulo_formulario">Inscreva seu projeto na mostra</string>
     <string name="hint_nome_invencao">Nome da invenção</string>
     <string name="hint_nome_inventor">Nome do inventor</string>
     <string name="rotulo_categoria">Categoria</string>
     <string name="botao_cadastrar">Cadastrar</string>
-    <string name="titulo_vitrine">Vitrine da feira</string>
+    <string name="titulo_vitrine">Bancadas da mostra</string>
     <string name="dica_vitrine">Toque para abrir a ficha · segure para remover</string>
     <string name="botao_ver_grade">Grade</string>
     <string name="botao_ver_lista">Lista</string>
@@ -25,56 +25,58 @@
     <string name="erro_nome_invencao">Mínimo de 3 caracteres</string>
     <string name="erro_nome_inventor">Mínimo de 3 caracteres</string>
     <string name="erro_categoria">Selecione uma categoria</string>
-    <string name="msg_invencao_cadastrada">%1$s entrou na feira! 🦇</string>
+    <string name="msg_invencao_cadastrada">%1$s já está na bancada! 🔬</string>
 
-    <string name="titulo_remover">Remover invenção?</string>
-    <string name="mensagem_remover">%1$s será levada de volta para a cripta e sumirá da feira.</string>
-    <string name="botao_remover">Remover</string>
+    <string name="titulo_remover">Retirar projeto?</string>
+    <string name="mensagem_remover">%1$s será desmontado e retirado da exposição.</string>
+    <string name="botao_remover">Retirar</string>
     <string name="botao_cancelar">Cancelar</string>
-    <string name="msg_invencao_removida">%1$s voltou para a cripta 👻</string>
+    <string name="msg_invencao_removida">%1$s saiu da exposição 📦</string>
 
-    <string name="descricao_padrao">Protótipo recém-saído da oficina de %1$s. Ainda cheira a enxofre e verniz fresco, mas promete revolucionar a categoria %2$s nesta noite de Halloween.</string>
+    <string name="descricao_padrao">Projeto recém-inscrito por %1$s na área de %2$s. O protótipo ainda tem fita adesiva à mostra, mas a hipótese promete surpreender a banca avaliadora.</string>
 
     <!-- Categorias -->
     <string name="categoria_selecione">Selecione…</string>
-    <string name="categoria_pocoes">Poções Borbulhantes</string>
-    <string name="categoria_aboboras">Abóboras Mecânicas</string>
-    <string name="categoria_transportes">Transportes Sombrios</string>
-    <string name="categoria_artefatos">Artefatos Fantasmagóricos</string>
-    <string name="categoria_engenhocas">Engenhocas Assombradas</string>
+    <string name="categoria_quimica">Química</string>
+    <string name="categoria_fisica">Física</string>
+    <string name="categoria_biologia">Biologia</string>
+    <string name="categoria_robotica">Robótica</string>
+    <string name="categoria_energia">Energia Renovável</string>
+    <string name="categoria_astronomia">Astronomia</string>
     <string-array name="categorias_invencao">
         <item>@string/categoria_selecione</item>
-        <item>@string/categoria_pocoes</item>
-        <item>@string/categoria_aboboras</item>
-        <item>@string/categoria_transportes</item>
-        <item>@string/categoria_artefatos</item>
-        <item>@string/categoria_engenhocas</item>
+        <item>@string/categoria_quimica</item>
+        <item>@string/categoria_fisica</item>
+        <item>@string/categoria_biologia</item>
+        <item>@string/categoria_robotica</item>
+        <item>@string/categoria_energia</item>
+        <item>@string/categoria_astronomia</item>
     </string-array>
 
-    <!-- Invenções iniciais -->
-    <string name="invencao_caldeirao_nome">Caldeirão Autoborbulhante</string>
-    <string name="invencao_caldeirao_inventor">Bruxa Morgana Fuligem</string>
-    <string name="invencao_caldeirao_descricao">Caldeirão que mexe a própria poção em espiral perfeita e solta um arroto esverdeado quando o feitiço chega ao ponto. Acompanha tampa anti-sapos fujões.</string>
+    <!-- Projetos iniciais -->
+    <string name="invencao_vulcao_nome">Vulcão de Bicarbonato Turbo</string>
+    <string name="invencao_vulcao_inventor">Ana Lavoisier</string>
+    <string name="invencao_vulcao_descricao">Maquete de vulcão que mostra a reação entre bicarbonato de sódio e vinagre. Um funil interno direciona o gás carbônico e faz a espuma subir três vezes mais alto que a versão clássica.</string>
 
-    <string name="invencao_abobora_nome">Abóbora Lanterna Falante</string>
-    <string name="invencao_abobora_inventor">Jack O\'Lanterna</string>
-    <string name="invencao_abobora_descricao">Lanterna de abóbora com engrenagens de cobre que ilumina trilhas escuras e conta piadas arrepiantes a cada badalada da meia-noite.</string>
+    <string name="invencao_robo_nome">Robô Seguidor de Linha</string>
+    <string name="invencao_robo_inventor">Caio Turing</string>
+    <string name="invencao_robo_descricao">Robô com dois sensores infravermelhos que lê uma faixa preta no chão e corrige a direção sozinho. Feito com motores de carrinho reaproveitados e uma placa programável.</string>
 
-    <string name="invencao_vassoura_nome">Vassoura a Jato Turbo</string>
-    <string name="invencao_vassoura_inventor">Hilda Rabiscava</string>
-    <string name="invencao_vassoura_descricao">Vassoura com propulsores de poeira estelar, freio de cauda de gato e piloto automático para voos rasantes sobre o cemitério.</string>
+    <string name="invencao_foguete_nome">Foguete de Garrafa PET</string>
+    <string name="invencao_foguete_inventor">Bia Gagarin</string>
+    <string name="invencao_foguete_descricao">Foguete movido a água e ar comprimido que demonstra a terceira lei de Newton. As aletas de papelão estabilizam o voo, que já passou de 40 metros nos testes do pátio.</string>
 
-    <string name="invencao_detector_nome">Detector de Fantasmas Portátil</string>
-    <string name="invencao_detector_inventor">Dr. Ectoplasma</string>
-    <string name="invencao_detector_descricao">Aparelho que vibra, assobia e brilha em lilás quando um fantasma tímido se aproxima. Calibrado para assombrações de até três séculos.</string>
+    <string name="invencao_solar_nome">Carregador Solar de Bolso</string>
+    <string name="invencao_solar_inventor">Davi Volta</string>
+    <string name="invencao_solar_descricao">Pequeno painel fotovoltaico ligado a uma bateria recarregável que carrega um celular em cerca de quatro horas de sol. A caixa é impressa em 3D com plástico reciclado.</string>
 
-    <string name="invencao_morcego_nome">Morcego-Drone Vigia</string>
-    <string name="invencao_morcego_inventor">Conde Vladislau Jr.</string>
-    <string name="invencao_morcego_descricao">Drone em forma de morcego com hélice silenciosa e ecolocalização aprimorada, ideal para patrulhar torres de castelos em noites sem lua.</string>
+    <string name="invencao_hidroponia_nome">Horta Hidropônica Inteligente</string>
+    <string name="invencao_hidroponia_inventor">Lia Mendel</string>
+    <string name="invencao_hidroponia_descricao">Cultivo de alface sem terra, com raízes mergulhadas em solução nutritiva. Um sensor de umidade avisa por LED quando é hora de completar a água do reservatório.</string>
 
-    <string name="invencao_relogio_nome">Relógio da Lua Cheia</string>
-    <string name="invencao_relogio_inventor">Lupércio Uivante</string>
-    <string name="invencao_relogio_descricao">Relógio de bolso que conta as horas até a próxima lua cheia e uiva baixinho como alarme para lobisomens distraídos.</string>
+    <string name="invencao_telescopio_nome">Telescópio de Papelão</string>
+    <string name="invencao_telescopio_inventor">Rafa Hubble</string>
+    <string name="invencao_telescopio_descricao">Telescópio refrator montado com tubos de papelão e duas lentes de óculos. Aumenta cerca de 20 vezes, o suficiente para ver as crateras da Lua e as luas de Júpiter.</string>
 
     <!-- Tela 2 – Ficha da Invenção -->
     <string name="titulo_ficha">Ficha da Invenção</string>
@@ -82,11 +84,11 @@
     <string name="rotulo_descricao">Descrição do protótipo</string>
     <string name="botao_voltar_feira">Voltar à feira</string>
     <string name="botao_testar_prototipo">Testar protótipo</string>
-    <string name="erro_dados_invencao">Os dados desta invenção se perderam na névoa. Voltando…</string>
+    <string name="erro_dados_invencao">Os dados deste projeto não chegaram à bancada. Voltando…</string>
 
     <!-- Tela 3 – Câmara de Testes -->
     <string name="titulo_camara">Câmara de Testes</string>
-    <string name="subtitulo_camara">Coloque o protótipo sob a lua e observe</string>
+    <string name="subtitulo_camara">Bancada de avaliação: registre o resultado do experimento</string>
     <string name="rotulo_invencao_em_teste">Em teste</string>
     <string name="rotulo_resultado">Resultado do teste</string>
     <string name="resultado_aprovada">Aprovada</string>

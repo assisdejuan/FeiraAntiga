@@ -1,0 +1,37 @@
+<!-- Vulcão de bicarbonato: cone com espuma de reação química -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <path
+        android:fillColor="#FFF8EA"
+        android:pathData="M41,24 a9,9 0 1,0 18,0 a9,9 0 1,0 -18,0 Z" />
+    <path
+        android:fillColor="#FFF8EA"
+        android:pathData="M33,20 a6,6 0 1,0 12,0 a6,6 0 1,0 -12,0 Z" />
+    <path
+        android:fillColor="#FFF8EA"
+        android:pathData="M55,18 a6,6 0 1,0 12,0 a6,6 0 1,0 -12,0 Z" />
+    <path
+        android:fillColor="#FFF8EA"
+        android:pathData="M43,10 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0 Z" />
+    <path
+        android:fillColor="#4E6B2E"
+        android:pathData="M8,84 L92,84 L92,90 L8,90 Z" />
+    <path
+        android:fillColor="#9A6A47"
+        android:pathData="M16,84 L40,40 L60,40 L84,84 Z" />
+    <path
+        android:fillColor="#74492D"
+        android:pathData="M50,40 L60,40 L84,84 L64,84 Z" />
+    <path
+        android:fillColor="#E0601A"
+        android:pathData="M39,40 Q50,33 61,40 L57,47 Q50,44 43,47 Z" />
+    <path
+        android:fillColor="#F7B267"
+        android:pathData="M42,45 Q38,58 43,63 Q47,56 46,46 Z" />
+    <path
+        android:fillColor="#F7B267"
+        android:pathData="M56,45 Q61,60 56,67 Q52,58 54,46 Z" />
+</vector>

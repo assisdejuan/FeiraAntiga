@@ -24,7 +24,7 @@
         android:contentDescription="@string/cd_imagem_invencao_generica"
         android:padding="14dp"
         android:scaleType="fitCenter"
-        tools:src="@drawable/img_morcego" />
+        tools:src="@drawable/img_foguete" />
 
     <TextView
         android:id="@+id/tvNomeInvencao"
@@ -36,7 +36,7 @@
         android:gravity="center_horizontal"
         android:lines="2"
         android:textSize="15sp"
-        tools:text="Morcego-Drone Vigia" />
+        tools:text="Foguete de Garrafa PET" />
 
     <TextView
         android:id="@+id/tvCategoriaInvencao"
@@ -44,5 +44,5 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="6dp"
-        tools:text="Engenhocas Assombradas" />
+        tools:text="Física" />
 </LinearLayout>

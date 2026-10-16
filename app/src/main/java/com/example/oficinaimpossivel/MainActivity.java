@@ -236,7 +236,7 @@ public class MainActivity extends AppCompatActivity implements InvencaoAdapter.O
     @Override
     public void aoClicarLongo(@NonNull Invencao invencao) {
         new MaterialAlertDialogBuilder(this)
-                .setIcon(R.drawable.img_fantasma)
+                .setIcon(R.drawable.img_invencao_padrao)
                 .setTitle(R.string.titulo_remover)
                 .setMessage(getString(R.string.mensagem_remover, invencao.getNome()))
                 .setNegativeButton(R.string.botao_cancelar, null)

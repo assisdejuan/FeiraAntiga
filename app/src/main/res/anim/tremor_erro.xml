@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Microanimação de erro: o cartão "estremece" como se tivesse visto um fantasma. -->
+<!-- Microanimação de erro: o cartão "estremece" como um tubo de ensaio agitado. -->
 <translate xmlns:android="http://schemas.android.com/apk/res/android"
     android:duration="400"
     android:fromXDelta="0"

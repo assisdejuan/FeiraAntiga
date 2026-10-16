@@ -1,0 +1,49 @@
+<!-- Átomo: logotipo da Feira de Ciências -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <group
+        android:pivotX="50"
+        android:pivotY="50"
+        android:rotation="0">
+        <path
+            android:pathData="M10,50 a40,14 0 1,0 80,0 a40,14 0 1,0 -80,0 Z"
+            android:strokeColor="#3DA5D9"
+            android:strokeWidth="4" />
+    </group>
+    <group
+        android:pivotX="50"
+        android:pivotY="50"
+        android:rotation="60">
+        <path
+            android:pathData="M10,50 a40,14 0 1,0 80,0 a40,14 0 1,0 -80,0 Z"
+            android:strokeColor="#3DA5D9"
+            android:strokeWidth="4" />
+    </group>
+    <group
+        android:pivotX="50"
+        android:pivotY="50"
+        android:rotation="120">
+        <path
+            android:pathData="M10,50 a40,14 0 1,0 80,0 a40,14 0 1,0 -80,0 Z"
+            android:strokeColor="#3DA5D9"
+            android:strokeWidth="4" />
+    </group>
+    <path
+        android:fillColor="#E0601A"
+        android:pathData="M41,50 a9,9 0 1,0 18,0 a9,9 0 1,0 -18,0 Z" />
+    <path
+        android:fillColor="#F7B267"
+        android:pathData="M44,47 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0 Z" />
+    <path
+        android:fillColor="#FFD23F"
+        android:pathData="M86,50 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0 Z" />
+    <path
+        android:fillColor="#FFD23F"
+        android:pathData="M26,85 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0 Z" />
+    <path
+        android:fillColor="#FFD23F"
+        android:pathData="M26,15 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0 Z" />
+</vector>

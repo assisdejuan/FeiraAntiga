@@ -1,0 +1,40 @@
+<!-- Telescópio refrator de papelão apontado para o céu -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <path
+        android:fillColor="#F3F1E6"
+        android:pathData="M19,24 a9,9 0 1,0 18,0 a9,9 0 1,0 -18,0 Z" />
+    <path
+        android:fillColor="#22362C"
+        android:pathData="M24,21 a8,8 0 1,0 16,0 a8,8 0 1,0 -16,0 Z" />
+    <path
+        android:fillColor="#FFD23F"
+        android:pathData="M72,12 L73.12,14.879999999999999 L76,16 L73.12,17.12 L72,20 L70.88,17.12 L68,16 L70.88,14.879999999999999 Z" />
+    <path
+        android:fillColor="#FFD23F"
+        android:pathData="M84,31 L84.84,33.16 L87,34 L84.84,34.84 L84,37 L83.16,34.84 L81,34 L83.16,33.16 Z" />
+    <path
+        android:fillColor="#F3F1E6"
+        android:pathData="M58.2,10 a1.8,1.8 0 1,0 3.6,0 a1.8,1.8 0 1,0 -3.6,0 Z" />
+    <path
+        android:pathData="M48,56 L34,92 M48,56 L62,92 M48,56 L48,92"
+        android:strokeColor="#C9CED6"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:fillColor="#E0601A"
+        android:pathData="M20,62 L70,32 L77,43 L27,73 Z" />
+    <path
+        android:fillColor="#2A1B12"
+        android:pathData="M70,32 L77,43 L81,40 L74,29 Z" />
+    <path
+        android:fillColor="#9FB3C8"
+        android:pathData="M20,62 L27,73 L22,76 L15,65 Z" />
+    <path
+        android:fillColor="#F7B267"
+        android:pathData="M36,54 L44,49 L50,59 L42,64 Z" />
+</vector>

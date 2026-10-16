@@ -1,0 +1,52 @@
+<!-- Robô seguidor de linha com sensores e rodas -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <path
+        android:pathData="M50,12 L50,22"
+        android:strokeColor="#C9CED6"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:fillColor="#E0601A"
+        android:pathData="M46,10 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0 Z" />
+    <path
+        android:fillColor="#9FB3C8"
+        android:pathData="M30,22 L70,22 Q74,22 74,26 L74,48 Q74,52 70,52 L30,52 Q26,52 26,48 L26,26 Q26,22 30,22 Z" />
+    <path
+        android:fillColor="#3DD6F5"
+        android:pathData="M35,35 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0 Z" />
+    <path
+        android:fillColor="#3DD6F5"
+        android:pathData="M55,35 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0 Z" />
+    <path
+        android:fillColor="#2A1B12"
+        android:pathData="M40,44 L60,44 L60,47 L40,47 Z" />
+    <path
+        android:fillColor="#7E93AA"
+        android:pathData="M32,55 L68,55 L68,80 L32,80 Z" />
+    <path
+        android:fillColor="#E0601A"
+        android:pathData="M45,66 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0 Z" />
+    <path
+        android:fillColor="#9FB3C8"
+        android:pathData="M21,58 L29,58 L29,74 L21,74 Z" />
+    <path
+        android:fillColor="#9FB3C8"
+        android:pathData="M71,58 L79,58 L79,74 L71,74 Z" />
+    <path
+        android:fillColor="#F3F1E6"
+        android:pathData="M32,86 a6,6 0 1,0 12,0 a6,6 0 1,0 -12,0 Z" />
+    <path
+        android:fillColor="#2A1B12"
+        android:pathData="M35,86 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0 Z" />
+    <path
+        android:fillColor="#F3F1E6"
+        android:pathData="M56,86 a6,6 0 1,0 12,0 a6,6 0 1,0 -12,0 Z" />
+    <path
+        android:fillColor="#2A1B12"
+        android:pathData="M59,86 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0 Z" />
+</vector>

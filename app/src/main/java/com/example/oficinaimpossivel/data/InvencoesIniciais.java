@@ -11,7 +11,7 @@ import com.example.oficinaimpossivel.model.Invencao;
 
 import java.util.ArrayList;
 
-/** Monta as invenções que já estão expostas quando a Feira abre. */
+/** Monta os projetos que já estão expostos quando a Feira de Ciências abre. */
 public final class InvencoesIniciais {
 
     private InvencoesIniciais() {
@@ -21,41 +21,41 @@ public final class InvencoesIniciais {
     public static ArrayList<Invencao> criar(@NonNull Context context) {
         ArrayList<Invencao> invencoes = new ArrayList<>();
         invencoes.add(criar(context,
-                R.string.invencao_caldeirao_nome,
-                R.string.invencao_caldeirao_inventor,
-                R.string.categoria_pocoes,
-                R.string.invencao_caldeirao_descricao,
-                R.drawable.img_caldeirao));
+                R.string.invencao_vulcao_nome,
+                R.string.invencao_vulcao_inventor,
+                R.string.categoria_quimica,
+                R.string.invencao_vulcao_descricao,
+                R.drawable.img_vulcao));
         invencoes.add(criar(context,
-                R.string.invencao_abobora_nome,
-                R.string.invencao_abobora_inventor,
-                R.string.categoria_aboboras,
-                R.string.invencao_abobora_descricao,
-                R.drawable.img_abobora));
+                R.string.invencao_robo_nome,
+                R.string.invencao_robo_inventor,
+                R.string.categoria_robotica,
+                R.string.invencao_robo_descricao,
+                R.drawable.img_robo));
         invencoes.add(criar(context,
-                R.string.invencao_vassoura_nome,
-                R.string.invencao_vassoura_inventor,
-                R.string.categoria_transportes,
-                R.string.invencao_vassoura_descricao,
-                R.drawable.img_vassoura));
+                R.string.invencao_foguete_nome,
+                R.string.invencao_foguete_inventor,
+                R.string.categoria_fisica,
+                R.string.invencao_foguete_descricao,
+                R.drawable.img_foguete));
         invencoes.add(criar(context,
-                R.string.invencao_detector_nome,
-                R.string.invencao_detector_inventor,
-                R.string.categoria_artefatos,
-                R.string.invencao_detector_descricao,
-                R.drawable.img_fantasma));
+                R.string.invencao_solar_nome,
+                R.string.invencao_solar_inventor,
+                R.string.categoria_energia,
+                R.string.invencao_solar_descricao,
+                R.drawable.img_painel_solar));
         invencoes.add(criar(context,
-                R.string.invencao_morcego_nome,
-                R.string.invencao_morcego_inventor,
-                R.string.categoria_engenhocas,
-                R.string.invencao_morcego_descricao,
-                R.drawable.img_morcego));
+                R.string.invencao_hidroponia_nome,
+                R.string.invencao_hidroponia_inventor,
+                R.string.categoria_biologia,
+                R.string.invencao_hidroponia_descricao,
+                R.drawable.img_hidroponia));
         invencoes.add(criar(context,
-                R.string.invencao_relogio_nome,
-                R.string.invencao_relogio_inventor,
-                R.string.categoria_engenhocas,
-                R.string.invencao_relogio_descricao,
-                R.drawable.img_relogio_lua));
+                R.string.invencao_telescopio_nome,
+                R.string.invencao_telescopio_inventor,
+                R.string.categoria_astronomia,
+                R.string.invencao_telescopio_descricao,
+                R.drawable.img_telescopio));
         return invencoes;
     }
 

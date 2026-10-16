@@ -1,0 +1,43 @@
+<!-- Horta hidropônica: muda com raízes na solução nutritiva -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <path
+        android:fillColor="#4E9B3A"
+        android:pathData="M49,18 L51,18 L51,60 L49,60 Z" />
+    <path
+        android:fillColor="#6CC04A"
+        android:pathData="M50,34 Q34,24 28,34 Q40,42 50,38 Z" />
+    <path
+        android:fillColor="#8FD66B"
+        android:pathData="M50,25 Q66,14 72,24 Q60,32 50,29 Z" />
+    <path
+        android:fillColor="#CFE8F0"
+        android:pathData="M30,42 L70,42 L70,84 Q70,90 64,90 L36,90 Q30,90 30,84 Z" />
+    <path
+        android:fillColor="#3DA5D9"
+        android:pathData="M30,60 L70,60 L70,84 Q70,90 64,90 L36,90 Q30,90 30,84 Z" />
+    <path
+        android:fillColor="#9FB3C8"
+        android:pathData="M27,39 L73,39 L73,43 L27,43 Z" />
+    <path
+        android:pathData="M50,60 L45,76 M50,60 L55,78 M50,60 L50,82"
+        android:strokeColor="#F3E6C9"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:fillColor="#E6F6FB"
+        android:pathData="M37,72 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0 Z" />
+    <path
+        android:fillColor="#E6F6FB"
+        android:pathData="M58.5,68 a2.5,2.5 0 1,0 5.0,0 a2.5,2.5 0 1,0 -5.0,0 Z" />
+    <path
+        android:fillColor="#E6F6FB"
+        android:pathData="M56.2,80 a1.8,1.8 0 1,0 3.6,0 a1.8,1.8 0 1,0 -3.6,0 Z" />
+    <path
+        android:fillColor="#3DDC84"
+        android:pathData="M61,50 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0 Z" />
+</vector>

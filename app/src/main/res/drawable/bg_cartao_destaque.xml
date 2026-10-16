@@ -13,7 +13,7 @@
         android:bottom="@dimen/sombra_cartao"
         android:right="@dimen/sombra_cartao">
         <shape>
-            <solid android:color="@color/abobora_clara" />
+            <solid android:color="@color/laranja_clara" />
             <stroke
                 android:width="@dimen/borda_tinta"
                 android:color="@color/tinta" />
