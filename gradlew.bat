@@ -21,7 +21,7 @@
 @rem
 @rem  gradlew startup script for Windows
 @rem
-@rem ##########################################################################
+@rem ###########################################################################
 
 @rem Set local scope for the variables, and ensure extensions are enabled
 setlocal EnableExtensions
